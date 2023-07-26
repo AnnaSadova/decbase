@@ -1,0 +1,147 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1440px;
+  height: 170px;
+  padding: 0 200px;
+}
+.header .header__nav_elements {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  padding-left: 300px;
+}
+.header .header__nav_elements li {
+  list-style: none;
+}
+.header .header__nav_elements a {
+  display: block;
+  text-transform: uppercase;
+  justify-content: flex-end;
+  text-decoration: none;
+  font-family: "Open__Sans_semibold";
+  color: #000;
+  padding: 7px 20px;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.header .header__nav_elements a:hover {
+  border: 3px solid #37806b;
+  border-radius: 20px;
+  color: #37806b;
+}
+.header .header__signUp {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 7px 20px;
+  background-color: #caa892;
+  font-family: "Open__Sans_semibold";
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px 0 20px 0;
+}
+
+.intro {
+  position: relative;
+  height: 764px;
+  width: 1213px;
+  left: 148px;
+}
+.intro h3 {
+  position: absolute;
+  width: 410px;
+  height: 30px;
+  left: 100px;
+  top: 100px;
+  font-family: "Open__Sans_semibold";
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #646464;
+}
+.intro h1 {
+  position: absolute;
+  width: 645px;
+  height: 267px;
+  left: 95px;
+  top: 105px;
+  font-family: "Poppins_semibold";
+  font-style: normal;
+  font-weight: 700px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 89px;
+  -webkit-text-stroke: 2px black;
+  color: #212121;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.intro p {
+  position: absolute;
+  width: 650px;
+  height: 90px;
+  left: 100px;
+  top: 338px;
+  font-family: "Open__Sans_regular";
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 30px;
+  color: #5e6282;
+}
+.intro button {
+  position: absolute;
+  width: 117px;
+  height: 23px;
+  left: 100px;
+  top: 501px;
+  font-family: "Open__Sans_semibold";
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px 0 20px 0;
+  background: #37806b;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  text-transform: uppercase;
+  border: none;
+}
+.intro .intro_img {
+  position: relative;
+  left: 750px;
+  top: 50px;
+  border-radius: 120px 0 120px 0;
+  border: 3px solid #b0855b;
+  border-image-outset: 40px;
+}
+
+@font-face {
+  font-family: Open__Sans_regular;
+  src: url("/fonts/Open_Sans/static/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: Open__Sans_semibold;
+  src: url("/fonts/Open_Sans/static/OpenSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: Open__Sans_bold;
+  src: url("/fonts/Open_Sans/static/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins_medium;
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: Poppins_semibold;
+  src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: Raleway_medium;
+  src: url("/fonts/Raleway/static/Raleway-Medium.ttf");
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,39 @@
+@import "./header";
+@import "./intro";
+@import "./service";
+@import "./about";
+@import "./successful__work";
+@import "./completed__work";
+@import "./reviews";
+@import "./latest__news";
+@import "./registration";
+@import "./footer";
+
+@font-face {
+  font-family: Open__Sans_regular;
+  src: url("/fonts/Open_Sans/static/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: Open__Sans_semibold;
+  src: url("/fonts/Open_Sans/static/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Open__Sans_bold;
+  src: url("/fonts/Open_Sans/static/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins_medium;
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: Poppins_semibold;
+  src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Raleway_medium;
+  src: url("/fonts/Raleway/static/Raleway-Medium.ttf");
+}
