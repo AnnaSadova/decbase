@@ -4,11 +4,12 @@
   width: 1213px;
   left: 148px;
 
-  h3 {
+  .about_h3 {
     position: absolute;
     width: 410px;
     height: 30px;
-    top: 100px;
+    top: 10px;
+    left: 950px;
     font-family: "Open__Sans_semibold";
     // font-style: normal;
     // font-weight: 700;
@@ -17,51 +18,48 @@
     text-transform: uppercase;
     color: #646464;
   }
-  h1 {
-    position: absolute;
-    width: 645px;
-    height: 267px;
-    left: 95px;
-    top: 105px;
-    font-family: "Poppins_semibold";
+  .about_h2 {
+    position: relative;
+    width: 575px;
+    height: 167px;
+    left: 950px;
+    top: -635px;
+    font-family: "Poppins_medium";
     font-style: normal;
-    font-weight: 700px;
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 89px;
-    -webkit-text-stroke: 2px black;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: 0%;
     color: #212121;
 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-  p {
-    position: absolute;
-    width: 650px;
+  .about_p {
+    position: relative;
+    width: 550px;
     height: 90px;
-    left: 100px;
-    top: 338px;
+    left: 950px;
+    top: -655px;
     font-family: "Open__Sans_regular";
     font-weight: 200;
     font-size: 18px;
     line-height: 30px;
     color: #5e6282;
   }
-  button {
-    position: absolute;
-    width: 117px;
-    height: 23px;
-    left: 100px;
-    top: 501px;
+  .about_button {
+    position: relative;
+    width: 167px;
+    height: 53px;
+    left: 950px;
+    top: -450px;
     font-family: "Open__Sans_semibold";
     font-style: normal;
-
     font-size: 18px;
-
     text-align: center;
     color: #ffffff;
-    position: absolute;
-    width: 120px;
-    height: 40px;
+    // position: absolute;
+    // width: 120px;
+    // height: 40px;
     border-radius: 20px 0 20px 0;
     background: #37806b;
     box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
@@ -69,12 +67,31 @@
 
     border: none;
   }
-  .intro_img {
+  .about__img_cover {
     position: relative;
-    left: 750px;
     top: 50px;
-    border-radius: 120px 0 120px 0;
-    border: 3px solid #b0855b;
-    border-image-outset: 40px;
+    margin-left: 145px;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 440px;
+      bottom: 30px;
+      display: block;
+      width: 63%;
+      height: 100%;
+      border: 2px solid #b0855b;
+      border-radius: 140px 0px;
+      z-index: -1;
+    }
   }
+
+  // .about_img::before {
+  //   position: absolute;
+  //   top: -5%;
+  //   left: -15%;
+  //   width: 100%;
+  //   height: 100%;
+  //   border: 4px solid #77b244;
+  //   content: "";
+  // }
 }

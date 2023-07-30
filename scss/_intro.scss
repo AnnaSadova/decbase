@@ -1,12 +1,13 @@
 .intro {
   position: relative;
-  height: 764px;
-  width: 1213px;
+  top: 50px;
+  height: 720px;
+  width: 1513px;
   left: 148px;
-  display: flex;
-  h3 {
+
+  .intro_h3 {
     position: relative;
-    width: 410px;
+    width: 510px;
     height: 30px;
     left: 100px;
     top: 100px;
@@ -17,16 +18,17 @@
     //line-height: 30px;
     text-transform: uppercase;
     color: #646464;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-  h1 {
+  .intro_h1 {
     position: relative;
+    margin-top: 0;
     width: 645px;
     height: 267px;
     left: 95px;
-    top: 105px;
+    top: 95px;
     font-family: "Poppins_semibold";
     font-style: normal;
-    font-weight: 700px;
     font-weight: 700;
     font-size: 72px;
     line-height: 89px;
@@ -35,7 +37,7 @@
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-  p {
+  .intro_p {
     position: absolute;
     width: 650px;
     height: 90px;
@@ -46,8 +48,9 @@
     font-size: 18px;
     line-height: 30px;
     color: #5e6282;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-  button {
+  .intro_button {
     position: absolute;
     width: 117px;
     height: 23px;
@@ -70,12 +73,41 @@
 
     border: none;
   }
-  .intro_img {
+  // .intro_img {
+  //   position: relative;
+  //   left: 750px;
+  //   top: -350px;
+  //   border-radius: 120px 0 120px 0;
+  //   // border: 3px solid #b0855b;
+  //   border-image-outset: 40px;
+  // }
+  // .intro_border_img {
+  //   position: relative;
+  //   z-index: -1;
+  //   left: 70px;
+  //   top: -300px;
+  // }
+  .intro__img_cover {
     position: relative;
-    left: 750px;
-    top: 50px;
+    top: -350px;
+    margin-left: 745px;
     border-radius: 120px 0 120px 0;
-    border: 3px solid #b0855b;
-    border-image-outset: 40px;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      bottom: -33px;
+      display: block;
+      width: 90%;
+      height: 100%;
+      border: 2px solid #b0855b;
+      border-radius: 140px 0px;
+      z-index: -1;
+    }
+  }
+  .intro__img {
+    width: 715px;
+    height: 613px;
+    border-radius: 140px 0px;
   }
 }

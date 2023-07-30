@@ -1,0 +1,55 @@
+.reviews {
+  position: relative;
+  height: 764px;
+  width: 1213px;
+  left: 148px;
+  .reviews_h3 {
+    position: absolute;
+    width: 410px;
+    height: 30px;
+    top: 110px;
+    left: 700px;
+    font-family: "Open__Sans_semibold";
+    // font-style: normal;
+    // font-weight: 700;
+    font-size: 20px;
+    //line-height: 30px;
+    text-transform: uppercase;
+    color: #646464;
+  }
+  .reviews_h2 {
+    position: relative;
+    width: 575px;
+    height: 167px;
+    left: 550px;
+    top: 175px;
+    font-family: "Poppins_medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: 0%;
+    color: #212121;
+  }
+  .carousel {
+    position: relative;
+    width: 1400px;
+    height: 230px;
+    left: 50px;
+    top: 175px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .carousel-item.active {
+    background-color: #212121;
+    display: flex;
+    .test {
+      color: white;
+    }
+  }
+  .carousel-control-prev-icon {
+    color: red;
+    size: 100em;
+    z-index: 100;
+  }
+}

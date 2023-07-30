@@ -57,8 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let numberOfBlocks;
     if (randomNum >= 0 && randomNum <= 4) {
       numberOfBlocks = 3;
-    } else {
-      numberOfBlocks = 5;
     }
     for (let i = 0; i < numberOfBlocks; i++) {
       const serviceDetails = await fetchServiceDetails(numberOfBlocks);
@@ -75,3 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", handleServiceButtonClick);
   });
 });
+
+function changeButtonClass() {
+  console.log("success");
+}

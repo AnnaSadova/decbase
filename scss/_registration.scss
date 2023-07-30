@@ -1,0 +1,85 @@
+.registration {
+  position: relative;
+  height: 820px;
+  width: 1920px;
+  //   background: #e3e9f0;
+  .registration_h2 {
+    position: relative;
+    width: 620px;
+    height: 97px;
+    left: 700px;
+    top: 85px;
+    font-family: "Poppins_medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 28px;
+    letter-spacing: 8%;
+    color: #212121;
+    border-bottom: 1px solid #c4c4c4;
+  }
+  .registration_p {
+    position: relative;
+    width: 655px;
+    height: 90px;
+    left: 680px;
+    top: 155px;
+    font-family: "Open__Sans_regular";
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 28px;
+    color: #5e6282;
+    text-align: center;
+  }
+  .input_name {
+    position: relative;
+    top: 200px;
+    left: 650px;
+    width: 317px;
+    height: 48px;
+    background: #eeeeee;
+    border: none;
+    border-radius: 20px 0 20px 0;
+  }
+  .input_surname {
+    position: relative;
+    top: 200px;
+    left: 750px;
+    width: 317px;
+    height: 48px;
+    background: #eeeeee;
+    border: none;
+    border-radius: 20px 0 20px 0;
+  }
+  .input_email {
+    position: relative;
+    top: 300px;
+    left: 10px;
+    width: 737px;
+    height: 48px;
+    background: #eeeeee;
+    border: none;
+    border-radius: 20px 0 20px 0;
+  }
+  .input_submit {
+    position: relative;
+    width: 167px;
+    height: 53px;
+    left: -455px;
+    top: 450px;
+    font-family: "Open__Sans_semibold";
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    // position: absolute;
+    // width: 120px;
+    // height: 40px;
+    border-radius: 20px 0 20px 0;
+    background: #37806b;
+    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+    text-transform: uppercase;
+
+    border: none;
+  }
+}

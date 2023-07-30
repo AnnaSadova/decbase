@@ -1,0 +1,23 @@
+// .completed__work {
+//   position: relative;
+//   height: 680px;
+//   width: 1920px;
+//   background: #f8f8f8;
+// }
+
+.completed__work {
+  width: 1830px;
+  background-color: #f8f8f8;
+  .completed-work__title {
+    position: relative;
+    text-align: center;
+    left: 500px;
+    width: 830px;
+    font-family: Poppins_medium;
+    font-weight: 500;
+    font-size: 48px;
+  }
+  .completed-work__content-item {
+    position: relative;
+  }
+}
