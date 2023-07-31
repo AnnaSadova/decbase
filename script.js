@@ -77,3 +77,30 @@ document.addEventListener("DOMContentLoaded", () => {
 function changeButtonClass() {
   console.log("success");
 }
+
+function promptForClose() {
+  let the_answer = confirm(
+    "This window has been inactive for 10 seconds.  Would you like it to close?"
+  );
+  if (the_answer == true) {
+    top.opener = self;
+    top.window.close();
+  } else {
+    setTimeout("promptForClose()", 10000);
+  }
+}
+
+function definitelyClose() {
+  top.opener = self;
+  top.window.close();
+}
+
+// let onload = setTimeout("promptForClose()", 10000);
+
+window.addEventListener("load", function () {
+  let loader = document.getElementById("loading");
+  this.window.setTimeout(function () {
+    console.log("5 seconds have passed.");
+    loader.classList.add("loader_hidden");
+  }, 5000);
+});
