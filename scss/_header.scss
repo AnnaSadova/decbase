@@ -3,12 +3,17 @@
   top: 0;
   z-index: 8;
   background: #fff;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   width: 1940px;
   height: 120px;
   padding: 0 200px;
+  img {
+    margin-top: 20px;
+  }
+  .header__inner_wrapper {
+    display: flex;
+  }
   .header__nav_elements {
     display: flex;
     justify-content: flex-end;
@@ -38,13 +43,33 @@
     }
   }
   .header__signUp {
+    margin-top: 20px;
     display: block;
     text-decoration: none;
+    text-align: center;
+    align-items: center;
     color: #fff;
     padding: 7px 20px;
+    height: 50px;
     background-color: #caa892;
     font-family: "Open__Sans_semibold";
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 20px 0 20px 0;
+  }
+  .header__progress-container {
+    display: block;
+    top: 105px;
+    left: 43%;
+    height: 4px;
+    position: sticky;
+    z-index: 99;
+    width: 100%;
+  }
+  .header__progress-bar {
+    position: fixed;
+    display: block;
+    height: 4px;
+    background-color: green;
+    width: 0%;
   }
 }

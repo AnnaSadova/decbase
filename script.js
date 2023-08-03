@@ -36,30 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function showRandomServiceDetails() {
-    // clearServiceDetailscontainer();
-    // const randomServiceIds = [];
-
-    // while (randomServiceIds.length < 5) {
-    //   const randomId = Math.floor(Math.random() * 100) + 1; // Вибираємо випадкові ідентифікатори з діапазону 1-100
-    //   if (!randomServiceIds.includes(randomId)) {
-    //     randomServiceIds.push(randomId);
-    //   }
-    // }
-
-    // for (let i = 0; i < randomServiceIds.length; i++) {
-    //   const serviceId = randomServiceIds[i];
-    //   const serviceDetails = await fetchServiceDetails(serviceId);
-    //   const serviceDetailsBlock = addServiceDetailsBlock(serviceDetails);
-    //   serviceDetailsContainer.appendChild(serviceDetailsBlock);
-    // }
     clearServiceDetailscontainer();
-    let randomNum = Math.floor(Math.random() * 10);
-    let numberOfBlocks;
-    if (randomNum >= 0 && randomNum <= 4) {
-      numberOfBlocks = 3;
-    }
+    let numberOfBlocks = 3;
     for (let i = 0; i < numberOfBlocks; i++) {
-      const serviceDetails = await fetchServiceDetails(numberOfBlocks);
+      const randomServiceId = Math.floor(Math.random() * 100) + 1;
+      const serviceDetails = await fetchServiceDetails(randomServiceId);
       const serviceDetailsBlock = addServiceDetailsBlock(serviceDetails);
       serviceDetailsContainer.appendChild(serviceDetailsBlock);
     }
@@ -95,8 +76,6 @@ function definitelyClose() {
   top.window.close();
 }
 
-// let onload = setTimeout("promptForClose()", 10000);
-
 window.addEventListener("load", function () {
   let loader = document.getElementById("loading");
   this.window.setTimeout(function () {
@@ -104,3 +83,60 @@ window.addEventListener("load", function () {
     loader.classList.add("loader_hidden");
   }, 5000);
 });
+
+window.onscroll = function () {
+  myFunction();
+};
+
+function myFunction() {
+  const winScroll =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+// IMAGES API
+
+const apiKey = "vhYQqA4t1tkmTTwYz3YGHWX0qF271wTxS9qr81_2Q6M";
+const apiUrl = `https://api.unsplash.com/photos/random/?count=2&client_id=${apiKey}`;
+async function fetchRandomBlocks() {
+  try {
+    const response1 = await fetch(
+      "https://jsonplaceholder.typicode.com/posts/1"
+    );
+    const response2 = await fetch(
+      "https://jsonplaceholder.typicode.com/posts/2"
+    );
+    const data1 = await response1.json();
+    const data2 = await response2.json();
+    return [data1, data2];
+  } catch (err) {
+    console.error("Error fetching random blocks:", err);
+  }
+}
+
+fetch(apiUrl)
+  .then((response) => response.json())
+  .then((data) => {
+    const imagesDiv = document.getElementById("images");
+    const contentDiv = document.getElementById("latest__news-content");
+
+    data.forEach((imageData) => {
+      const imageUrl = imageData.urls.regular;
+      const image = document.createElement("img");
+      image.src = imageUrl;
+      imagesDiv.appendChild(image).classList.add("ivan");
+    });
+
+    fetchRandomBlocks().then((blocksData) => {
+      blocksData.forEach((block) => {
+        const blockDiv = document.createElement("div");
+        blockDiv.innerHTML = `<h2>${block.title}</h2><p>${block.body}</p>`;
+        contentDiv.appendChild(blockDiv);
+      });
+    });
+  })
+  .catch((error) => console.error("Error fetching random images:", error));

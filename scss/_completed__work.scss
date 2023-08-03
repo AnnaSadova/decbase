@@ -1,13 +1,11 @@
-// .completed__work {
-//   position: relative;
-//   height: 680px;
-//   width: 1920px;
-//   background: #f8f8f8;
-// }
-
 .completed__work {
   width: 1830px;
+  height: 900px;
   background-color: #f8f8f8;
+  .completed-work__content {
+    position: relative;
+    top: -800px;
+  }
   .completed-work__title {
     position: relative;
     text-align: center;
@@ -25,8 +23,10 @@
     top: 100px;
     border-radius: 30px 0 30px 0;
     background: #fff;
-    // border: 1px solid #000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    &:hover {
+      transform: scale(1.03);
+    }
   }
   .completed-work__content-item2 {
     position: relative;
@@ -36,8 +36,10 @@
     top: 170px;
     border-radius: 30px 0 30px 0;
     background: #fff;
-    // border: 1px solid #000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    &:hover {
+      transform: scale(1.03);
+    }
   }
   .completed-work__content-item3 {
     position: relative;
@@ -47,8 +49,10 @@
     top: -260px;
     border-radius: 30px 0 30px 0;
     background: #fff;
-    // border: 1px solid #000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    &:hover {
+      transform: scale(1.03);
+    }
   }
   .completed-work__content-item4 {
     position: relative;
@@ -58,8 +62,10 @@
     top: -180px;
     border-radius: 30px 0 30px 0;
     background: #fff;
-    // border: 1px solid #000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    &:hover {
+      transform: scale(1.03);
+    }
   }
   .completed-work__content-number1 {
     position: relative;
@@ -132,5 +138,95 @@
     top: 10px;
     font-size: 30px;
     font-weight: 300;
+  }
+  .decore-1 {
+    position: relative;
+    left: 463px;
+    top: 1070px;
+    width: 70px;
+    height: 150px;
+    border-top: 3px solid #868686;
+    border-right: 3px solid #868686;
+    &:hover {
+      border-bottom: 3px solid #868686;
+      border-left: 3px solid #868686;
+      border-top: 0;
+      border-right: 0;
+    }
+  }
+  .decore-2 {
+    position: relative;
+    left: 530px;
+    top: 1067px;
+    width: 70px;
+    height: 150px;
+    border-bottom: 3px solid #868686;
+    border-left: 3px solid #868686;
+    &:hover {
+      border-bottom: 0;
+      border-left: 0;
+      border-top: 3px solid #868686;
+      border-right: 3px solid #868686;
+    }
+  }
+  .decore-3 {
+    position: relative;
+    left: 783px;
+    top: 930px;
+    width: 70px;
+    height: 150px;
+    border-bottom: 3px solid #868686;
+    border-right: 3px solid #868686;
+    &:hover {
+      border-left: 3px solid #868686;
+      border-top: 3px solid #868686;
+      border-right: 0;
+      border-bottom: 0;
+    }
+  }
+  .decore-4 {
+    position: relative;
+    left: 850px;
+    top: 632px;
+    width: 70px;
+    height: 150px;
+    border-top: 3px solid #868686;
+    border-left: 3px solid #868686;
+    &:hover {
+      border-bottom: 3px solid #868686;
+      border-left: 0;
+      border-top: 0;
+      border-right: 3px solid #868686;
+    }
+  }
+  .decore-5 {
+    position: relative;
+    left: 1063px;
+    top: 480px;
+    width: 70px;
+    height: 150px;
+    border-top: 3px solid #868686;
+    border-right: 3px solid #868686;
+    &:hover {
+      border-bottom: 3px solid #868686;
+      border-left: 3px solid #868686;
+      border-top: 0;
+      border-right: 0;
+    }
+  }
+  .decore-6 {
+    position: relative;
+    left: 1130px;
+    top: 480px;
+    width: 70px;
+    height: 150px;
+    border-bottom: 3px solid #868686;
+    border-left: 3px solid #868686;
+    &:hover {
+      border-bottom: 0;
+      border-left: 0;
+      border-top: 3px solid #868686;
+      border-right: 3px solid #868686;
+    }
   }
 }

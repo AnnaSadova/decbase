@@ -18,395 +18,408 @@
         <p>DECBASE</p>
       </div>
     </div>
-    <header class="header">
-      <div class="header__logo">
-        <img src="/decore/header_img.svg" alt="header_img" />
-        <!-- <a href="#" alt=".">decbase</a> -->
+    <header class="header" id="header">
+      <div class="header__inner_wrapper">
+        <div class="header__logo">
+          <img src="/decore/header_img.svg" alt="header_img" />
+        </div>
+        <div class="header__nav">
+          <ul class="header__nav_elements">
+            <li><a class="nav__home" href="#">home</a></li>
+            <li><a class="nav__project" href="#intro">project</a></li>
+            <li><a class="nav__services" href="#service">services</a></li>
+            <li><a class="nav__about" href="#about">about</a></li>
+            <li><a class="nav__blog" href="#blog">blog</a></li>
+            <li><a class="nav__shop" href="#shop">shop</a></li>
+            <li><a class="nav__contact" href="#footer">contact</a></li>
+          </ul>
+        </div>
+        <a href="#" alt="." class="header__signUp">Sign Up</a>
       </div>
-      <div class="header__nav">
-        <ul class="header__nav_elements">
-          <li><a class="nav__home" href="#">home</a></li>
-          <li><a class="nav__project" href="#">project</a></li>
-          <li><a class="nav__services" href="#">services</a></li>
-          <li><a class="nav__about" href="#">about</a></li>
-          <li><a class="nav__blog" href="#">blog</a></li>
-          <li><a class="nav__shop" href="#">shop</a></li>
-          <li><a class="nav__contact" href="#">contact</a></li>
-        </ul>
+      <div class="header__progress-container">
+        <div class="header__progress-bar" id="myBar"></div>
       </div>
-      <a href="#" alt="." class="header__signUp">Sign Up</a>
     </header>
-    <div class="intro">
-      <h3 class="intro_h3">modern interior</h3>
-      <h1 class="intro_h1">Create Your Interior Design.</h1>
-      <p class="intro_p">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation.
-      </p>
-      <button class="intro_button">Contact</button>
-      <div class="intro__img_cover">
-        <img src="/decore/intro_img.svg" class="intro__img" />
-      </div>
-      <!-- <img src="/decore/intro_border_img.svg" class="intro_border_img" /> -->
-    </div>
-    <div class="service">
-      <h3 class="service_h3">what we do</h3>
-      <h2 class="service_h2">Our Service</h2>
-      <div class="service__container">
-        <button class="service__button" data-service-id="1">All</button>
-        <button class="service__button" data-service-id="2">
-          Interior Design
-        </button>
-        <button class="service__button" data-service-id="3">
-          Architecture
-        </button>
-        <button class="service__button" data-service-id="4">Planning</button>
-      </div>
-      <div class="service__details__container"></div>
-    </div>
-    <div class="about">
-      <div class="about__img_cover">
-        <img src="/decore/about_img.svg" class="about__img" />
-      </div>
-      <!-- <div class="about__content"> -->
-      <h3 class="about_h3">about us</h3>
-      <h2 class="about_h2">
-        Interioris The Will <br />
-        of An Epoch Mextreo
-      </h2>
-      <p class="about_p">
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in some form injected humour, or
-        randomised words which don't look even slightly believable.If you are
-        going to use a passage of Lorem Ipsum, sure there isn't anything
-        embarrassing hidden the middleof text. All the Lorem Ipsum generators on
-        the Internettend to repeat predefined chunks as necessary,making this
-        the first true generator on the Internet.
-      </p>
-      <button class="about_button">learn more</button>
-      <!-- </div> -->
-    </div>
-    <div class="successful__work">
-      <div class="work__20img_cover">
-        <h2 class="work__h2">20</h2>
-        <!-- <img src="/decore/successful_20work_img.svg" class="work_20img" /> -->
-      </div>
-      <h2 class="successful__work_h2">
-        Years Of Successful Working <br />
-        The Market
-      </h2>
-      <button class="successful__work_button">Read More</button>
-      <div class="work__img_cover">
-        <img src="/decore/succesful_work.svg" class="work_img" />
-      </div>
-    </div>
-    <div class="completed__work">
-      <h2 class="completed-work__title">
-        3000+ Completed Work <br />
-        Which WE have Successfully Done
-      </h2>
-
-      <div class="completed-work__content">
-        <div class="completed-work__content-item1">
-          <div class="completed-work__content-card1">
-            <p class="completed-work__content-number1">980</p>
-            <p class="completed-work__content-title1">projects</p>
-          </div>
-        </div>
-        <div class="completed-work__content-item2">
-          <div class="completed-work__content-card2">
-            <p class="completed-work__content-number2">520</p>
-            <p class="completed-work__content-title2">happy clients</p>
-          </div>
-        </div>
-        <div class="completed-work__content-item3">
-          <div class="completed-work__content-card3">
-            <p class="completed-work__content-number3">330</p>
-            <p class="completed-work__content-title3">winners</p>
-          </div>
-        </div>
-        <div class="completed-work__content-item4">
-          <div class="completed-work__content-card4">
-            <p class="completed-work__content-number4">120</p>
-            <p class="completed-work__content-title4">recoments</p>
-          </div>
+    <div id="page-content">
+      <div class="intro" id="intro">
+        <h3 class="intro_h3">modern interior</h3>
+        <h1 class="intro_h1">Create Your Interior Design.</h1>
+        <p class="intro_p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation.
+        </p>
+        <button class="intro_button">Contact</button>
+        <div class="intro__img_cover">
+          <img src="/decore/intro_img.svg" class="intro__img" />
         </div>
       </div>
-    </div>
-    <div class="reviews">
-      <h3 class="reviews_h3">Testimonials</h3>
-      <h2 class="reviews_h2">Client says about us</h2>
-      <!-- carousel -->
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <div class="test">
-              <img />
-              <h2>Louis Saville</h2>
-              <h4>/CEO at Google inc</h4>
-              <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </h3>
-            </div>
-            <div class="test">
-              <img />
-              <h2>Rekha Varadwaz</h2>
-              <h4>/Manager at Nike inc</h4>
-              <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </h3>
+      <div class="service" id="service">
+        <h3 class="service_h3">what we do</h3>
+        <h2 class="service_h2">Our Service</h2>
+        <div class="service__container">
+          <button class="service__button" data-service-id="1">All</button>
+          <button class="service__button" data-service-id="2">
+            Interior Design
+          </button>
+          <button class="service__button" data-service-id="3">
+            Architecture
+          </button>
+          <button class="service__button" data-service-id="4">Planning</button>
+        </div>
+        <div class="service__details__container"></div>
+      </div>
+      <div class="about" id="about">
+        <div class="about__img_cover">
+          <img src="/decore/about_img.svg" class="about__img" />
+        </div>
+        <h3 class="about_h3">about us</h3>
+        <h2 class="about_h2">
+          Interioris The Will <br />
+          of An Epoch Mextreo
+        </h2>
+        <p class="about_p">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form injected humour, or
+          randomised words which don't look even slightly believable.If you are
+          going to use a passage of Lorem Ipsum, sure there isn't anything
+          embarrassing hidden the middleof text. All the Lorem Ipsum generators
+          on the Internettend to repeat predefined chunks as necessary,making
+          this the first true generator on the Internet.
+        </p>
+        <button class="about_button">learn more</button>
+      </div>
+      <div class="successful__work" id="blog">
+        <div class="work__20img_cover">
+          <h2 class="work__h2">20</h2>
+        </div>
+        <h2 class="successful__work_h2">
+          Years Of Successful Working <br />
+          The Market
+        </h2>
+        <button class="successful__work_button">Read More</button>
+        <div class="work__img_cover">
+          <img src="/decore/succesful_work.svg" class="work_img" />
+        </div>
+      </div>
+      <div class="completed__work">
+        <h2 class="completed-work__title">
+          3000+ Completed Work <br />
+          Which WE have Successfully Done
+        </h2>
+        <div class="completed-work__content">
+          <div class="decore-1"></div>
+          <div class="decore-2"></div>
+          <div class="decore-3"></div>
+          <div class="decore-4"></div>
+          <div class="decore-5"></div>
+          <div class="decore-6"></div>
+          <div class="completed-work__content-item1">
+            <div class="completed-work__content-card1">
+              <p class="completed-work__content-number1">980</p>
+              <p class="completed-work__content-title1">projects</p>
             </div>
           </div>
-          <div class="carousel-item active">
-            <div class="test">
-              <img />
-              <h2>Louis Saville</h2>
-              <h4>/CEO at Google inc</h4>
-              <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </h3>
-            </div>
-            <div class="test">
-              <img />
-              <h2>Rekha Varadwaz</h2>
-              <h4>/Manager at Nike inc</h4>
-              <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </h3>
+          <div class="completed-work__content-item2">
+            <div class="completed-work__content-card2">
+              <p class="completed-work__content-number2">520</p>
+              <p class="completed-work__content-title2">happy clients</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="test">
-              <img />
-              <h2>Louis Saville</h2>
-              <h4>/CEO at Google inc</h4>
-              <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </h3>
+          <div class="completed-work__content-item3">
+            <div class="completed-work__content-card3">
+              <p class="completed-work__content-number3">330</p>
+              <p class="completed-work__content-title3">winners</p>
             </div>
-            <div class="test">
-              <img />
-              <h2>Rekha Varadwaz</h2>
-              <h4>/Manager at Nike inc</h4>
-              <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </h3>
+          </div>
+          <div class="completed-work__content-item4">
+            <div class="completed-work__content-card4">
+              <p class="completed-work__content-number4">120</p>
+              <p class="completed-work__content-title4">recoments</p>
             </div>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="prev"
+      </div>
+      <div class="reviews" id="shop">
+        <h3 class="reviews_h3">Testimonials</h3>
+        <h2 class="reviews_h2">Client says about us</h2>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-    <div class="latest__news">
-      <h3></h3>
-      <h2></h2>
-      <!-- API -->
-    </div>
-    <div class="registration">
-      <h2 class="registration_h2">DON’T FORGET TO SIGN UP</h2>
-      <p class="registration_p">
-        Find out early about all upcoming promotions and new product releases
-        with our newsletter.
-      </p>
-      <form action="#">
-        <input
-          class="input_name"
-          type="text"
-          name="name_button"
-          placeholder="  Enter your name..."
-          id="name_button"
-          required
-        />
-        <input
-          class="input_surname"
-          type="text"
-          name="surname"
-          placeholder="  Enter your surname..."
-          id="surname_button"
-          required
-        />
-        <input
-          class="input_email"
-          type="email"
-          name="email_button"
-          placeholder="  Enter your e-mail..."
-          id="email_button"
-          required
-        />
-        <input
-          class="input_submit"
-          type="submit"
-          value="Subscribe"
-          for="email_button"
-          class="button"
-        />
-      </form>
-    </div>
-    <footer class="footer" id="footer">
-      <div class="container">
-        <div class="footer__wrapper">
-          <div class="footer__logo-wrapper">
-            <a href="./" class="logo footer__logo">
-              <img class="logo__icon" src="/decore/header_img.svg" alt="logo" />
-            </a>
-            <p class="footer__slogan">
-              But i must explain to you all this mistaken idea of dencouncing
-              pleasure.
-            </p>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="test">
+                <img />
+                <h2>Louis Saville</h2>
+                <h4>/CEO at Google inc</h4>
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h3>
+              </div>
+              <div class="test">
+                <img />
+                <h2>Rekha Varadwaz</h2>
+                <h4>/Manager at Nike inc</h4>
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h3>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div class="test">
+                <img />
+                <h2>Louis Saville</h2>
+                <h4>/CEO at Google inc</h4>
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h3>
+              </div>
+              <div class="test">
+                <img />
+                <h2>Rekha Varadwaz</h2>
+                <h4>/Manager at Nike inc</h4>
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="test">
+                <img />
+                <h2>Louis Saville</h2>
+                <h4>/CEO at Google inc</h4>
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h3>
+              </div>
+              <div class="test">
+                <img />
+                <h2>Rekha Varadwaz</h2>
+                <h4>/Manager at Nike inc</h4>
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h3>
+              </div>
+            </div>
           </div>
-          <nav class="footer__nav">
-            <div class="footer__nav-group">
-              <h3 class="footer__group-title">Quick links</h3>
-              <ul class="footer__nav-list">
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">About our company</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Services we provide</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#"
-                    >Career & opportunities</a
-                  >
-                </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Privacy policy</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Contact us</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__nav-group">
-              <h3 class="footer__group-title">Company</h3>
-              <ul class="footer__nav-list">
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">About company</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Our testimonials</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Latest news</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Our mission</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Get a free quote</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__nav-group">
-              <h3 class="footer__group-title">Contact us</h3>
-              <ul class="footer__nav-list">
-                <li class="footer__nav-item">
-                  <a
-                    class="footer__nav-link"
-                    href="https://www.google.com/maps/search/Sagrada+Familia,+Herba+Street+Front+USA/@50.4704821,30.6218849,14z?authuser=0&entry=ttu"
-                    >Sagrada Familia, Herba <span>Street Front USA</span></a
-                  >
-                </li>
-                <li class="footer__nav-item">
-                  <a
-                    class="footer__nav-link footer__email"
-                    href="mailto:brandoxide@gmail.com"
-                    >brandoxide@gmail.com</a
-                  >
-                </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="tel:002-568423591"
-                    >002-568423591</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="footer__socials">
-            <h3 class="footer__group-title">Follow us</h3>
-            <ul class="footer__socials-list">
-              <li class="footer__socials-item">
-                <a
-                  class="footer__socials-link"
-                  src="https://www.facebook.com/"
-                  target="_blank"
-                  aria-label="facebook"
-                >
-                  <img src="/decore/facebook.svg" alt="Facebook" />
-                </a>
-              </li>
-              <li class="footer__socials-item">
-                <a
-                  class="footer__socials-link"
-                  href="https://twitter.com/"
-                  target="_blank"
-                  aria-label="twitter"
-                >
-                  <img src="/decore/twitter.svg" alt="Twitter" />
-                </a>
-              </li>
-              <li class="footer__socials-item">
-                <a
-                  class="footer__socials-link"
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  aria-label="instagram"
-                >
-                  <img src="/decore/insta.svg" alt="Instagram" />
-                </a>
-              </li>
-              <li class="footer__socials-item">
-                <a
-                  class="footer__socials-link"
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  aria-label="linkedin"
-                >
-                  <img src="/decore/linked.svg" alt="Linkedin" />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
-      <p class="footer__copyright">
-        Copyright @ <span id="copyrightYear">2023</span>
-        <a
-          class="footer__copyright-link"
-          href="https://www.brandoxide.com/"
-          target="_blank"
-          >Brandoxide</a
-        >. All right reserved.
-      </p>
-    </footer>
+      <div class="latest__news">
+        <h3>LATEST NEWS</h3>
+        <h2 class="news_h2">From Our Blog</h2>
+        <div class="news_img__cover">
+          <div class="latest__news-images" id="images"></div>
+        </div>
+        <div class="latest__news-content" id="latest__news-content"></div>
+      </div>
+      <div class="registration">
+        <h2 class="registration_h2">DON’T FORGET TO SIGN UP</h2>
+        <p class="registration_p">
+          Find out early about all upcoming promotions and new product releases
+          with our newsletter.
+        </p>
+        <form action="#">
+          <input
+            class="input_name"
+            type="text"
+            name="name_button"
+            placeholder="  Enter your name..."
+            id="name_button"
+            required
+          />
+          <input
+            class="input_surname"
+            type="text"
+            name="surname"
+            placeholder="  Enter your surname..."
+            id="surname_button"
+            required
+          />
+          <input
+            class="input_email"
+            type="email"
+            name="email_button"
+            placeholder="  Enter your e-mail..."
+            id="email_button"
+            required
+          />
+          <input
+            class="input_submit"
+            type="submit"
+            value="Subscribe"
+            for="email_button"
+            class="button"
+          />
+        </form>
+      </div>
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__logo-wrapper">
+              <a href="./" class="logo footer__logo">
+                <img
+                  class="logo__icon"
+                  src="/decore/header_img.svg"
+                  alt="logo"
+                />
+              </a>
+              <p class="footer__slogan">
+                But i must explain to you all this mistaken idea of dencouncing
+                pleasure.
+              </p>
+            </div>
+            <nav class="footer__nav">
+              <div class="footer__nav-group">
+                <h3 class="footer__group-title">Quick links</h3>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">About our company</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Services we provide</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#"
+                      >Career & opportunities</a
+                    >
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Privacy policy</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__nav-group">
+                <h3 class="footer__group-title">Company</h3>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">About company</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Our testimonials</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Latest news</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Our mission</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Get a free quote</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__nav-group">
+                <h3 class="footer__group-title">Contact us</h3>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a
+                      class="footer__nav-link"
+                      href="https://www.google.com/maps/search/Sagrada+Familia,+Herba+Street+Front+USA/@50.4704821,30.6218849,14z?authuser=0&entry=ttu"
+                      >Sagrada Familia, Herba <span>Street Front USA</span></a
+                    >
+                  </li>
+                  <li class="footer__nav-item">
+                    <a
+                      class="footer__nav-link footer__email"
+                      href="mailto:brandoxide@gmail.com"
+                      >brandoxide@gmail.com</a
+                    >
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="tel:002-568423591"
+                      >002-568423591</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="footer__socials">
+              <h3 class="footer__group-title">Follow us</h3>
+              <ul class="footer__socials-list">
+                <li class="footer__socials-item">
+                  <a
+                    class="footer__socials-link"
+                    src="https://www.facebook.com/"
+                    target="_blank"
+                    aria-label="facebook"
+                  >
+                    <img src="/decore/facebook.svg" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a
+                    class="footer__socials-link"
+                    href="https://twitter.com/"
+                    target="_blank"
+                    aria-label="twitter"
+                  >
+                    <img src="/decore/twitter.svg" alt="Twitter" />
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a
+                    class="footer__socials-link"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    aria-label="instagram"
+                  >
+                    <img src="/decore/insta.svg" alt="Instagram" />
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a
+                    class="footer__socials-link"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    aria-label="linkedin"
+                  >
+                    <img src="/decore/linked.svg" alt="Linkedin" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          Copyright @ <span id="copyrightYear">2023</span>
+          <a
+            class="footer__copyright-link"
+            href="https://www.brandoxide.com/"
+            target="_blank"
+            >Brandoxide</a
+          >. All right reserved.
+        </p>
+      </footer>
+    </div>
     <script src="script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
